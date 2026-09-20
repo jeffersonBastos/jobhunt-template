@@ -1,0 +1,12 @@
+# Copy this file to build/config.yaml and fill in your own values.
+# build/config.yaml is gitignored so your slug never gets committed by accident
+# if you turn this template repo private/personal later.
+
+# Used as the filename prefix for generated PDFs, e.g. "your-name-resume-2.pdf".
+slug: your-name
+
+# Maps a resume pivot folder name (under resumes/<pivot>/) to a short number
+# used in output filenames. Add an entry here whenever you create a new pivot.
+pivot_numbers:
+  web2: "2"
+  web3-ai: "3"

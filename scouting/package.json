@@ -1,0 +1,13 @@
+{
+  "name": "jobhunt-scouting",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Checks tracked career pages for postings and reports the ones worth reviewing.",
+  "scripts": {
+    "scout": "node scout.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

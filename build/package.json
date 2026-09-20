@@ -1,0 +1,15 @@
+{
+  "name": "jobhunt-build",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Render a resume markdown file to PDF via a fixed HTML/CSS template + headless Chrome.",
+  "bin": { "resume-build": "./build.js" },
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "marked": "^12.0.0"
+  }
+}

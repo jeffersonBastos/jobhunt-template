@@ -1,0 +1,10 @@
+node_modules/
+build/.render.html
+build/config.yaml
+.DS_Store
+.onboarded
+
+# PDFs are build artifacts — regenerate from markdown with build/build.js.
+# Review happens on the markdown diff, not the binary. Force-add a specific
+# delivered PDF with `git add -f` if you want a permanent record of one.
+*.pdf

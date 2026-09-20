@@ -1,0 +1,164 @@
+/* Resume template — a clean two-column CV layout.
+   Tune freely: colors, spacing, fonts are all here. Content lives in the
+   markdown files under resumes/. */
+
+:root {
+  --accent: #2b6cb0;          /* blue section labels + links */
+  --ink: #1a1a1a;             /* body text */
+  --muted: #6b7280;           /* dates / meta */
+  --serif: "PT Serif", Georgia, "Times New Roman", serif;
+  --display: "Playfair Display", Georgia, serif;
+}
+
+@page {
+  size: A4;
+  margin: 13mm 15mm;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 10.2px;
+  line-height: 1.4;
+}
+
+a { color: var(--accent); text-decoration: underline; }
+
+/* ---- header ---- */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+.head-left { flex: 1; }
+.name {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 33px;
+  line-height: 1.02;
+  margin: 0 0 6px;
+  letter-spacing: -0.2px;
+}
+.role-title {
+  margin: 0 0 6px;
+  max-width: 52ch;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--accent);
+}
+.summary {
+  margin: 0;
+  /* Measured, not guessed. .head-left is flex:1 and gives the summary 487px in
+     print; at that width the web2 EN paragraph pushed a stray word past the
+     phrase it should end on. 440-460px all break it right after "...with React
+     on the front end."; 450px is the middle of that stable band, so ~10px of
+     font-metric drift in either direction won't move the break. Fill is 97%,
+     so nothing is left ragged either. */
+  max-width: 450px;
+  font-size: 10.2px;
+}
+.head-right {
+  text-align: left;
+  min-width: 175px;
+  padding-top: 4px;
+  font-size: 10px;
+}
+.crow { margin: 2px 0; white-space: nowrap; }
+.crow .in, .crow .gh {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 12px;
+  width: 13px;
+  text-align: center;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+/* ---- layout: sidebar-contact ----
+   Opt-in via `layout: sidebar-contact` in a resume's frontmatter (see build.js).
+   The contact block leaves the header for the sidebar, so the header is a single
+   full-width column and the summary no longer shares its line with contact
+   details — it runs to the margin instead, which is why the max-width cap above
+   is lifted here.
+
+   Both columns start at the same y, so the first .section in each keeps the
+   normal 15px top margin — that is what lands SKILLS and CONTACT on the same
+   line. Don't zero it on the sidebar: that drops SKILLS exactly 15px below
+   CONTACT and the two columns read as accidentally offset. */
+.layout-sidebar-contact .head { display: block; }
+.layout-sidebar-contact .head-left { flex: none; }
+.layout-sidebar-contact .summary { max-width: none; }
+.layout-sidebar-contact .col-side .crow {
+  /* .head-right set 10px on the contact rows; moving them to the sidebar left
+     them inheriting the 10.2px body size, half a step larger than everything
+     around them. Restore the size they were designed at. */
+  font-size: 10px;
+}
+
+/* ---- blue section labels ---- */
+.section {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 15px 0 7px;
+}
+
+/* ---- skills / education columns ---- */
+.cols {
+  display: grid;
+  /* Widened from 1.75fr. The sidebar only ever holds contact/education/languages
+     and was running out of content long before the skills column ran out of
+     text, so the skills lines wrapped more than they needed to. At 2.2fr the
+     sidebar is still ~204px, comfortably above the ~175px the no-wrap contact
+     rows need. */
+  grid-template-columns: 2.2fr 1fr;
+  gap: 26px;
+  margin-top: 4px;
+}
+.skill { margin-bottom: 6px; }
+.skill-group { font-weight: 700; font-size: 11.5px; }
+/* 10px matches .edu-degree, .lang and the contact rows, so the main column and
+   the sidebar read as one body size. Was 9.8px, which was invisible while the
+   two columns held unrelated content and obvious once contact moved in beside
+   the skills. */
+.skill-items { font-size: 10px; }
+
+.edu { margin-bottom: 8px; }
+.edu-school { font-weight: 700; font-size: 11.5px; line-height: 1.2; }
+.edu-period { color: var(--muted); font-size: 9px; margin: 2px 0; }
+.edu-degree { font-size: 10px; }
+.lang { font-size: 10px; }
+
+/* ---- experience ---- */
+.experience { margin-top: 4px; }
+.experience h2 {
+  font-weight: 700;
+  font-size: 12.5px;
+  margin: 12px 0 0;
+}
+.experience h2 em { font-weight: 400; font-style: italic; }
+/* meta line (location · dates) sits right under the job title */
+.experience h2 + p {
+  color: var(--muted);
+  font-size: 9px;
+  margin: 1px 0 4px;
+}
+.experience h2 + p em { font-style: normal; }
+.experience p { margin: 3px 0; }
+.experience p strong { font-weight: 700; }
+
+/* keep a job block from splitting awkwardly across pages */
+.experience h2 { break-after: avoid; }
+.experience h2 + p { break-before: avoid; }

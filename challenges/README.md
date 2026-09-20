@@ -1,0 +1,3 @@
+# challenges
+
+See ../CLAUDE.md.

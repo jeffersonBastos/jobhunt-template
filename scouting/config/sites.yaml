@@ -1,0 +1,43 @@
+# Registry of tracked career pages.
+#
+# Each entry names a company + which adapter (adapters/<adapter>.js) handles it.
+# `list_url` / `token` / `site` are whatever the adapter needs to find postings
+# — if a site supports pre-filtering via query params (department, seniority,
+# remote, location), put the already-filtered URL here. The pipeline never
+# re-implements that filtering; it trusts what's encoded in the URL.
+#
+# status: confirmed = adapter verified against this site's real data.
+#         needs-research-spike = adapter/data-source not confirmed yet.
+#
+# department_includes (optional): case-insensitive substring the record's
+# `department` field must contain to survive Stage B, applied BEFORE the LLM
+# classify step (script-only, 0 tokens). This is deliberately per-site, not
+# generic — each company names departments differently. Tune this if it's
+# dropping real engineering roles or letting through obvious non-fits;
+# filtered-out jobs are logged to state/filtered-log.jsonl for audit, never
+# silently lost.
+#
+# These three example entries cover the three most common adapter shapes
+# (Greenhouse, Lever, Gupy). Delete them and add your own real target
+# companies — check `scouting/adapters/` for the full list of supported ATS
+# adapters (Ashby, Workday, Avature, Teamtailor, Eightfold, InfoJobs, and
+# more) and each adapter file's header comment for its exact config shape.
+
+- key: example-greenhouse-co
+  company: Example Greenhouse Co
+  adapter: greenhouse
+  token: exampleco   # the token in boards.greenhouse.io/<token>
+  department_includes: "Engineering"   # tune to this company's actual department naming
+  status: needs-research-spike
+
+- key: example-lever-co
+  company: Example Lever Co
+  adapter: lever
+  site: exampleco   # the token in jobs.lever.co/<site>
+  status: needs-research-spike
+
+- key: example-gupy-co
+  company: Example Gupy Co
+  adapter: gupy
+  token: exampleco   # the subdomain in <token>.gupy.io
+  status: needs-research-spike
