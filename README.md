@@ -61,8 +61,3 @@ config file is a placeholder or a genericized example. Once you fill it in
 with your own information, treat the repo as private: this template is meant
 to be cloned into your own (private) repo, not committed to as a fork of a
 public one.
-
-## License
-
-MIT — see [LICENSE](LICENSE). Use it, fork it, adapt it for your own job
-search.

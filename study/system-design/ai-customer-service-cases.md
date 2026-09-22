@@ -1,12 +1,11 @@
 # AI customer-service system design cases
 
-Started for an interview round at a company building a generative AI
-platform — chatbots and internal service integrations: APIs, content
-management systems, production-ready AI solutions (see
-`../../interviews/prep/<company>/technical-round.md`). These are the
-domain-specific cases most likely to show up in a customer-communication/
-customer-service GenAI role, each with the one non-obvious insight and the
-follow-up probes an interviewer would likely push on.
+A set of system-design cases for the customer-communication/customer-service
+GenAI role shape — chatbots, ticket routing, agent-assist, and the internal
+service integrations that come with them. Each case has the one non-obvious
+insight and the follow-up probes an interviewer would likely push on. Useful
+prep for any generative-AI-platform round; keep your own notes on a specific
+company's stack in that company's file under `interviews/prep/<company>/`.
 
 ## 1. Support chatbot answering from an internal knowledge base (RAG)
 
@@ -122,10 +121,9 @@ synchronously inside the request/response cycle for anything non-trivial").
 
 ## Personal material to draw on if a case gets concrete
 
-- Silo Finance **MCP server** (exposed a protocol's API for agent/LLM
-  access) — closest real match to "internal service integration for AI."
-- Documentation-chat PoC (Express + React, RAG-shaped, built to pitch a
-  client engagement) — a real, if small, RAG build.
-- Ponder production incident (no gate between staging and prod caught a
-  data bug) — maps directly to "how do you catch a bad AI answer before
-  it reaches a customer": the lesson was a missing gate, not a missing fix.
+If you have real project experience that maps to any case above, keep short
+notes here — e.g. an MCP/agent-integration build, a RAG proof-of-concept, or
+a production incident whose root cause maps to one of the "likely follow-up"
+questions. Concrete, quantified, verifiable examples beat abstract answers
+every time; this section is just a reminder to keep them close at hand
+before the round, not to draft them fresh under pressure.

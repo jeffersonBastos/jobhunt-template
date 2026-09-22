@@ -440,7 +440,7 @@ correction for every future posting with the same issue.
 
 ## Regenerating the checklist
 
-If `resumes/web2/en.md` or `resumes/web3/en.md` skills change, refresh the
+If `resumes/web2/en.md` or `resumes/web3-ai/en.md` skills change, refresh the
 auto-generated part of the checklist:
 ```
 node lib/checklist-build.js

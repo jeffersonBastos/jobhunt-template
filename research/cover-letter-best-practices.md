@@ -95,12 +95,12 @@ axis for this project is **role type**, not location:
 
 - **Web3/DeFi postings:** lean on proof-of-work — name the protocol/project directly where
   the work is already public and credited, point at verifiable artifacts (GitHub, public
-  announcement threads) rather than asserting reliability
-  in the abstract. Silo Finance stays generic ("a multichain lending protocol") per the
-  existing client-naming policy in `profile/experience-bank.md`.
+  announcement threads) rather than asserting reliability in the abstract. Where a client
+  relationship isn't publicly named, stay generic ("a multichain lending protocol") per
+  your own client-naming policy in `profile/experience-bank.md`.
 - **Web2 / general backend-full-stack postings:** stays closer to the classic
-  transactional convention — direct, metrics-forward, no crypto-specific framing. BRy's
-  high-SLA signature API (~100k req/day) is the anchor achievement.
+  transactional convention — direct, metrics-forward, no crypto-specific framing. Your
+  highest-SLA signature API work is the anchor achievement.
 - **The generic base** (used when there's no time to tailor) needs to work for either —
   see §5.
 
@@ -126,8 +126,8 @@ placeholders. To do that it should:
   tailoring adds back in) — something like "product-minded backend engineer who owns
   systems end-to-end," per the positioning already drafted in `profile/narrative.md`.
 - Anchor on the single strongest, most broadly legible achievement rather than a
-  web2-only or web3-only one — the CoW SDK v7 migration (public, verifiable, quantified:
-  32% bundle-size cut, shipped as a breaking major release in 3 months) reads as strong
+  web2-only or web3-only one — a public, verifiable, quantified open-source contribution
+  (e.g. a measurable performance win shipped as a breaking major release) reads as strong
   signal regardless of whether the target role is web2 or web3.
 - Still pass every check in §6 below — genericness in the *filler* is fine to avoid by
   being well-written; genericness in *content* (no company specifics) is the one thing
@@ -161,8 +161,7 @@ placeholders. To do that it should:
 ## Sources
 
 Full evidence base — 60+ sources across three independent research passes:
-`research/cover-letter-full-report.md` (local, durable copy) or the hosted version:
-https://claude.ai/code/artifact/8a5f2483-aadd-4c28-97c4-f31d983365b1
+`research/cover-letter-full-report.md`.
 
 Most load-bearing for the decisions above:
 

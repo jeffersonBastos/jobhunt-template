@@ -46,9 +46,8 @@ they're easy to repeat live under pressure:
 
 - Invalid identifier starting with a digit (`1HourToMin`) — variables can't
 start with a number.
-- `cont` typo for `const` (syntax noise, not a logic bug — per
-[[feedback_code_review_logic_over_syntax]], don't dwell on this class of
-mistake).
+- `cont` typo for `const` (syntax noise, not a logic bug — don't dwell on
+this class of mistake).
 - **Real logic bug**: used `!!(x)` (boolean coercion — converts to
 `true`/`false`) instead of `Math.abs(x)` (absolute value) to get a
 positive diff. `!!(-5)` is `true`, not `5`. This was the one worth

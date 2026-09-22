@@ -26,7 +26,7 @@ function readJson(p, fallback) {
     // A truncated/corrupt file (e.g. process killed mid-write) must not
     // silently look like "no history yet" — that would make the next fetch
     // re-classify everything as new and quietly wipe out every verdict,
-    // correction, and applied-status you has ever recorded here.
+    // correction, and applied-status you have ever recorded here.
     throw new Error(`corrupt state file ${p}: ${err.message} — refusing to silently treat it as empty. Restore or repair it by hand before continuing.`);
   }
 }

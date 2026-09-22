@@ -20,7 +20,7 @@ confidentiality rule in [`../rules.md`](../rules.md).
 ## The status log is the point
 
 The platform's stated bar is that the client never has to ask for a status update, and
-that the client and I would give identical answers to: what am I working on now, what
+that you and the client would give identical answers to: what am I working on now, what
 was I just working on, what's next. `status-log.md` exists so that answer is always
 one file away — append daily/weekly depending on the client's preference, and use it
 to write the update itself.

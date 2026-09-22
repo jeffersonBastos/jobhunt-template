@@ -21,11 +21,16 @@ material (résumé, answers) from the shared files.
 ```
 README.md                        # this file — status + how to use the folder
 rules.md                         # the rules you're bound by, distilled (rates, recruiter, NDA, trial)
-profile.md                       # public profile + rate + availability: state and decisions
-onboarding/                      # verbatim onboarding material once accepted (source, immutable)
+profile.md                       # your own file, gitignored: rate + availability + decisions
+onboarding/                      # your own copy of any verbatim onboarding material (gitignored)
 applications/                    # one file per Eligible Jobs application (see its README)
 engagements/                     # one folder per client engagement once won (see its README)
 ```
+
+`profile.md` and `onboarding/` are gitignored on purpose — rate figures and
+verbatim platform onboarding material are exactly the kind of thing that
+shouldn't end up in a repo you might ever make public or share. Create them
+locally as plain files; the pattern still works, they just never get committed.
 
 ## Status
 

@@ -1,8 +1,7 @@
 // Generic Avature ATS adapter — Avature is a multi-tenant careers-portal
 // platform (like Greenhouse/Lever/Teamtailor), so this reads everything it
 // needs from `site.list_url` rather than hardcoding a company. Confirmed
-// live 2026-09-13 against Booz Allen Hamilton (careers.boozallen.com), see
-// tasks/done/boozallen-avature-adapter.md for the discovery trail.
+// live 2026-09-13 against Booz Allen Hamilton (careers.boozallen.com).
 //
 // List page (site.list_url) is server-rendered HTML, no JS needed. Each job
 // row is a `<td data-th="Title" class="cell-title"><a href="...JobDetail?

@@ -22,8 +22,7 @@ Example:
 Original attempt enumerated 4 explicit overlap cases (starts-inside,
 ends-inside, contains, contained-by) instead of using a general test.
 Worth remembering the bugs — not the syntax noise (missing braces, the
-`itv`/`interval` typo), per
-[[feedback_code_review_logic_over_syntax]], but the real logic bugs:
+`itv`/`interval` typo), but the real logic bugs:
 
 - **`forEach` can't return a value.** `intervals.forEach(...)` always
   returns `undefined` — `return true` inside the callback only exits that

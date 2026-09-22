@@ -145,16 +145,16 @@ This is the section that matters most for the two pivots.
 - **If this describes your own pivot:** a strong backend/reliability engineer *with real
   domain-specific data-infra experience* is in the sweet spot the a16z piece describes.
   Consider:
-  - Foreground **real protocol names** (CoW Protocol, Silo Finance) and concrete
-    on-chain/data work (subgraphs, real-time pricing via Chainlink/Pyth/RedStone,
-    multichain, points-pipeline correctness, grants).
+  - Foreground **the real protocol/client names you've actually worked with** and
+    concrete on-chain/data work (subgraphs, real-time pricing feeds, multichain,
+    points-pipeline correctness, grants) — name what you're actually credited on.
   - Add **verifiable proof** (GitHub, any public subgraphs/docs/PRs, deployed
-    endpoints) — the Web3 differentiator he currently lacks on paper.
-  - **Not** fabricate Solidity/audit/governance signals he doesn't have. Lead with
+    endpoints) — the Web3 differentiator you currently lack on paper.
+  - **Don't** fabricate Solidity/audit/governance signals you don't have. Lead with
     transferable high-SLA reliability + genuine DeFi infra. That's a coherent, honest,
     competitive story.
-- **Web2 pivot** stays conventional: reverse-chron, impact bullets, ATS-clean, BRy's
-  high-SLA API as the anchor of reliability-at-scale.
+- **Web2 pivot** stays conventional: reverse-chron, impact bullets, ATS-clean, your
+  highest-throughput API work as the anchor of reliability-at-scale.
 
 ## 8. Common mistakes (consolidated)
 

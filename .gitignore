@@ -4,6 +4,11 @@ build/config.yaml
 .DS_Store
 .onboarded
 
+# Platform-track financial/private details (rate, tax, payment account) —
+# keep your own copy locally, never commit it.
+toptal/profile.md
+toptal/onboarding/
+
 # PDFs are build artifacts — regenerate from markdown with build/build.js.
 # Review happens on the markdown diff, not the binary. Force-add a specific
 # delivered PDF with `git add -f` if you want a permanent record of one.

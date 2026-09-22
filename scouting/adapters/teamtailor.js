@@ -1,8 +1,7 @@
 // Generic Teamtailor ATS adapter — Teamtailor is a multi-tenant careers
 // platform, so this reads everything it needs from `site.list_url` rather
 // than hardcoding a company. Confirmed live 2026-09-13 against Reap
-// (careers.reap.global/jobs), see tasks/done/reap-teamtailor-adapter.md for
-// the discovery trail.
+// (careers.reap.global/jobs).
 //
 // List page is server-rendered HTML with every job's absolute URL already
 // embedded as a plain `<a href="<list_url>/<id>-<slug>">`. Pagination is

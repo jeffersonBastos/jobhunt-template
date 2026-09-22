@@ -4,8 +4,8 @@ One file per application to a job from the **Eligible Jobs** page (or a job a Di
 of Talent brings). Filename: `<client-or-job-slug>.md`.
 
 Toptal applications differ from the direct job search: no résumé upload and no cover
-letter — the profile is already with the client. What I write is a short pitch to the
-Toptal team explaining **why I'm a good fit for this project**. Draft it from
+letter — the profile is already with the client. What you write is a short pitch to the
+Toptal team explaining **why you're a good fit for this project**. Draft it from
 [`../../answers/bank.md`](../../answers/bank.md) and the experience bank, in English,
 tropes-filtered.
 
@@ -29,7 +29,7 @@ recruiter: <name, once known>
 <the text actually submitted>
 
 ## Gaps / risks
-<what I don't have, and how I framed it>
+<what you don't have, and how you framed it>
 
 ## Timeline
 - YYYY-MM-DD — applied

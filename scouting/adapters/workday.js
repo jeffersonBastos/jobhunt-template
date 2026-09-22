@@ -4,8 +4,7 @@
 // public, unauthenticated JSON API the SPA itself calls, so this adapter
 // derives tenant/site/locale from `site.list_url` rather than hardcoding a
 // company. Confirmed live 2026-09-13 against Booz Allen Hamilton
-// (bah.wd1.myworkdayjobs.com/en-US/BAH_Jobs), see
-// tasks/done/boozallen-workday-adapter.md for the discovery trail.
+// (bah.wd1.myworkdayjobs.com/en-US/BAH_Jobs).
 //
 //   POST https://<host>/wday/cxs/<tenant>/<siteId>/jobs
 //     {"appliedFacets": {...}, "limit": N, "offset": N, "searchText": "..."}

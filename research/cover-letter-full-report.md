@@ -4,19 +4,16 @@ created: 2026-07-27
 tags: [research, cover-letter, raw-source]
 purpose: >-
   Full, unabridged evidence base behind cover-letter-best-practices.md — kept
-  as an immutable raw source so nothing is lost if the hosted artifact link
-  ever breaks. Historical/country-by-country depth here is broader than the
-  project currently needs; see cover-letter-best-practices.md for the
-  narrowed, practical version actually used to write letters.
-artifact_url: https://claude.ai/code/artifact/8a5f2483-aadd-4c28-97c4-f31d983365b1
+  as an immutable raw source. Historical/country-by-country depth here is
+  broader than the project currently needs; see cover-letter-best-practices.md
+  for the narrowed, practical version actually used to write letters.
 ---
 
 # The Cover Letter, Internationally: An Evidence-Based Research Report
 
 Compiled 27 Jul 2026. 60+ sources, cross-checked across three independent research
 passes (terminology/country conventions; recruiter behavior/ATS/AI-impact; industry/
-seniority/structure). Hosted version with clickable links:
-https://claude.ai/code/artifact/8a5f2483-aadd-4c28-97c4-f31d983365b1
+seniority/structure).
 
 **Confidence legend:** `FACT` verifiable/documented · `OPINION` recommendation /
 practitioner consensus · `CONTESTED` credible sources disagree · `LOW-CONF`
@@ -307,9 +304,6 @@ anything that reads as interchangeable across applicants).
 ---
 
 ## 12. References
-
-See the hosted artifact for the complete, individually-linked reference list (60+
-sources): https://claude.ai/code/artifact/8a5f2483-aadd-4c28-97c4-f31d983365b1
 
 Highest-confidence tier: official government/employment sources (France Travail, werk.nl,
 UK National Careers Service, Job Bank Canada) and university career centers (Harvard,

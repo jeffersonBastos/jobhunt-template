@@ -1,88 +1,28 @@
 ---
-title: Toptal — operating rules that bind me
-created: 2026-09-04
-source: onboarding/talent-training.md (verbatim), accepted 2026-09-04
+title: Toptal — platform rules (worked example)
 ---
 
-# Rules of the platform (working summary)
+# Rules of the platform (worked example)
 
-Distilled from [`onboarding/talent-training.md`](onboarding/talent-training.md).
-When a rule matters for a decision, check the verbatim text — this page is the
-index, not the contract.
+This file is where you'd keep a working summary of your own talent-network
+platform's rules — trial terms, confidentiality obligations, payment
+mechanics, whatever governs the engagement. Toptal is used here only as a
+concrete example of the pattern; nothing below is prescriptive advice and
+none of it reflects a real, current agreement.
 
-## Hard rules (breaking these has consequences up to removal)
+Typical categories worth capturing for any platform:
 
-| Rule | Practical meaning |
-|---|---|
-| **Never discuss rates with clients** | Rate is negotiated with Toptal only. If a client pushes, tell the recruiter and let them handle it. Rate changes apply only to *new* engagements. |
-| **Recruiter first on anything client-related** | Any issue in an interview or active engagement goes to the assigned recruiter before the client. Contacting the client "in an unprofessional way" is a disbandment risk. |
-| **No subcontracting, ever** | The screened person is the person who does the work. Overloaded → recruiter, not a third party. |
-| **Use the @toptal.com email** for all Toptal-related mail. |
-| **Don't sign contracts** without talking to the recruiter (includes anything a client puts in front of me). |
-| **No work outside the platform with a client Toptal introduced** | Any new engagement with that client is reported to the recruiter and runs through Toptal. A client asking to go around the platform gets reported. |
-| **Confidentiality** | No details of the work, and no platform jobs/info, shared outside client + recruiter. Nothing about it on social media, blogs, forums. Client data kept encrypted and deleted at the end of the engagement. |
-| **Trade compliance** | Don't work, even for a minute and even in transit, from Crimea/Cuba/Iran/North Korea/Syria; no payments through banks or branches located there. Violation = no fees owed for the non-compliant period, possible clawback and termination. Notify Toptal if status changes. |
+- **Hard rules** — things that risk removal if broken (e.g. don't discuss
+  rate directly with a client, route issues through your point of contact
+  first, no subcontracting, confidentiality of client work).
+- **Engagement types** — hourly/part-time/full-time, and what tracking each
+  requires.
+- **Trial period terms** — length, and what happens if it doesn't convert.
+- **Performance expectations** — what the platform/client will judge you on.
+- **Payment mechanics** — who pays you, invoicing cadence, payment method.
+- **Rate-setting** — if it's yours to decide, keep your reasoning in a
+  private `profile.md` (gitignored — this is financial data, don't commit
+  it even in your own fork).
 
-**Call the recruiter** when: on trial and the client isn't giving enough work; the
-client offers equity/stock; I need to leave a project unexpectedly; I hit a
-problem I can't solve; the client's point of contact changes.
-
-## Engagement types
-
-| Type | Weekly minimum | Hour tracking |
-|---|---|---|
-| Hourly | none | **Required** — logged in the Toptal platform |
-| Part-time | 20+ h/week | Not required (keep a private log anyway) |
-| Full-time | 40+ h/week | Not required (keep a private log anyway) |
-
-Occasional crunch overtime is expected. Persistently unreasonable client demands →
-recruiter can intervene.
-
-## Trial period
-
-- Up to **10 business days**, length depends on the engagement.
-- End of trial: client keeps me (~99%) or doesn't (~1%).
-- Not kept for non-performance reasons (e.g. culture fit) → paid **50%** of trial hours.
-- Not kept for **performance** → **unpaid** for trial hours. So the trial is the part
-  where a satisfied client is my responsibility, not a formality.
-
-## Performance expectations (what they'll judge me on)
-
-- Ramp up fast; adapt to the client's timezone and preferred hours.
-- Respond fast, on the client's channel; set and hold availability windows.
-- Proactive status updates daily/weekly — **the client should never have to ask**.
-  The test: if the client and I were in separate rooms, we'd give the same answer to
-  "what are you working on now / what were you just working on / what's next".
-- Clear written and spoken English.
-- Speed never traded against quality.
-
-## Money
-
-- Paid by **Toptal**, never by the client. Toptal Payments or Payoneer.
-- Toptal invoices clients biweekly → payment shows "outstanding" → flips to "due"
-  20 days after the invoice → paid a few days later. Toptal pays regardless of
-  whether the client has paid them.
-- Payment questions: support@payment.toptal.com.
-- Licenses: I'm expected to own the standard tools of the trade; the client pays for
-  anything specific to their engagement.
-
-## Rate setting (mine to decide)
-
-Toptal's own framing: the rate is set by me, it affects how competitive the profile
-is, and clients compare against pricing norms for my region. Their pitch for going
-lower than solo freelancing is that Toptal absorbs sales, negotiation and billing
-overhead, so utilization is higher. Talent Operations will advise if asked.
-
-→ My actual rate decision and its reasoning: [`profile.md`](profile.md).
-
-## Other doors inside the network
-
-- Screening Team — screening@toptal.com
-- Blog — editor@toptal.com (technical editors + illustrator + syndication)
-- Sourcing Team — sourcing@toptal.com
-- Toptal Slack community — jobs and events are announced there first;
-  community@toptal.com
-
-Note the confidentiality rule cuts against the [LinkedIn content system](../CLAUDE.md):
-platform jobs and client work are off-limits as post material. Toptal's own blog is
-the sanctioned publishing channel.
+Replace this whole file with your own platform's actual rules once you're
+on one.
